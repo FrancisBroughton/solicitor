@@ -4,11 +4,14 @@ header.govuk-header {
 }
 
 footer.govuk-footer.footer-new,
-header.govuk-header.header-new
- {
+header.govuk-header.header-new {
   display: block;
 }
 
 main#main-content {
   padding-top: 0;
+}
+
+.govuk-heading-xl {
+  padding-top: 20px;
 }
