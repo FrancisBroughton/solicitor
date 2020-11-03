@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="/buyer-finance" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row ">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Quote complete
+        </h1>
+        <div class="govuk-panel__body">
+          Your total cost is £900. 
+          As a first time buyer your stamp duty will be £0.
+        </div>
+      </div>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption">Our Breakdown</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Solicitor fee</th>
+            <th scope="col" class="govuk-table__header">Amount</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Solicitor fee</th>
+            <td class="govuk-table__cell">£650</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Property Searches</th>
+            <td class="govuk-table__cell">£150</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Stamp Duty</th>
+            <td class="govuk-table__cell">£0</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Land Registry</th>
+            <td class="govuk-table__cell">£100</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="/create-account.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        <strong>Create your account</strong>
+      </a>
+       
+    </div>
+</div>
+
+{% endblock %}

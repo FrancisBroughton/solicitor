@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row ">
+    <div class="govuk-grid-column-two-thirds">
+      <fieldset class="govuk-fieldset">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="cost-per-item-error">
+          Create your account 
+          </label>
+      </h1>
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <form action="/form-handler" method="post" novalidate>
+        
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="given-name">
+                      First Name
+                    </label>
+                    <input class="govuk-input" id="given-name" name="given-name" type="text" spellcheck="false" autocomplete="name">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="family-name">
+                      Last Name
+                    </label>
+                    <input class="govuk-input" id="family-name" name="family-name" type="text" spellcheck="false" autocomplete="name">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="email">
+                      Email address
+                    </label>
+                    <div id="email-hint" class="govuk-hint">
+                      We’ll only use this to send you a receipt
+                    </div>
+                    <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="password">
+                      Password
+                    </label>
+                    <input class="govuk-input" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                  </div>
+                  <a href="/userhomepage" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                    Create your account
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                      <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </main>
+      </fieldset>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="/tenure" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row ">
+    <div class="govuk-grid-column-two-thirds">
+      <fieldset class="govuk-fieldset">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="cost-per-item-error">
+          Is the property a new build?
+          </label>
+      </h1>
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <form action="/form-handler" method="post" novalidate>
+        
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <a href="/buyer-type" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                    <strong>Next</strong>
+                 </a>
+                </form>
+              </div>
+            </div>
+          </main>
+      
+      </fieldset>
+    </div>
+</div>
+
+{% endblock %}
