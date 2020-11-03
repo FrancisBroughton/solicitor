@@ -1,0 +1,14 @@
+footer.govuk-footer,
+header.govuk-header {
+  display: none;
+}
+
+footer.govuk-footer.footer-new,
+header.govuk-header.header-new
+ {
+  display: block;
+}
+
+main#main-content {
+  padding-top: 0;
+}
